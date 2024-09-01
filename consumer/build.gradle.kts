@@ -63,3 +63,8 @@ neoForge {
 
     ideSyncTask(tasks.generateModMetadata)
 }
+
+dependencies {
+    implementation(projects.lib)
+    jarJar(projects.lib)
+}

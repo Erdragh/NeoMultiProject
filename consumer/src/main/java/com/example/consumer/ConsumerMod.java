@@ -1,5 +1,6 @@
 package com.example.consumer;
 
+import com.example.lib.LibMod;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -15,6 +16,6 @@ public class ConsumerMod {
 
     @SubscribeEvent
     public static void onCommonSetup(FMLCommonSetupEvent event) {
-        LOGGER.info("Consumer mod {} starting at {}", MODID, event.description());
+        LOGGER.info("Consumer mod {} starting at {} alongside {}", MODID, event.description(), LibMod.MODID);
     }
 }
