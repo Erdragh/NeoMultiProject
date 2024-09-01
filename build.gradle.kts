@@ -56,6 +56,15 @@ subprojects {
             }
         }
     }
+
+    // Sets up a dependency configuration called "localRuntime".
+    // This configuration should be used instead of "runtimeOnly" to declare
+    // a dependency that will be present for runtime testing but that is
+    // "optional", meaning it will not be pulled by dependents of this mod.
+    configurations {
+        val localRuntime = register("localRuntime")
+        named("runtimeClasspath").extendsFrom(localRuntime)
+    }
 }
 
 tasks.named<Wrapper>("wrapper") {
