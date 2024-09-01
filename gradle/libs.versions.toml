@@ -1,0 +1,22 @@
+[versions]
+
+# Minecraft
+minecraft = "1.21.1"
+minecraftRange = "[1.21.1, )"
+neoforge = "21.1.34"
+neoforgeRange = "[21.1, )"
+loaderRange = "[4, )"
+parchmentMc = "1.21"
+parchment = "2024.07.28"
+
+# Plugins
+moddev = "1.0.19"
+
+# Dependencies
+# ...
+
+[libraries]
+# ...
+
+[plugins]
+moddev = { id = "net.neoforged.moddev", version.ref = "moddev" }
