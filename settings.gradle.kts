@@ -1,7 +1,5 @@
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-rootProject.name = "MultiprojectSample"
-
 pluginManagement {
     repositories {
         mavenLocal()
