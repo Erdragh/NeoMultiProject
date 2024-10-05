@@ -33,7 +33,7 @@ neoForge {
             data()
             gameDirectory = project.file("runs/data")
             sourceSet = sourceSets.named("datagen").get()
-            mods = setOf(neoForge.mods.named(datagenModId).get())
+            loadedMods = setOf(neoForge.mods.named(datagenModId).get())
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll("--mod", modId, "--all", "--output", file("src/generated/resources/").absolutePath, "--existing", file("src/main/resources/").absolutePath)
